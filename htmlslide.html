@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="Slide">
+    </head>
+    <body>
+      
+        <div class="slideshow">
+            <div class="slide">
+              <h1 class="titulo-slides titulo-Web">DESIGN DE PÁGINA WEB</h1>
+                    <p class="conteudo web-conteudo">Web design profissional com as mais 
+                        recentes tecnologias e linguagens de programação, rápido e eficiente.
+                        Otimizado para posicionamento natural no Google e autogestão.</p>
+                    
+                        <div class="botton-comeca"><a href="WEb-html.html">Saiba mais</a> </div>
+            </div>
+            <div class="slide">
+              <h1 class="titulo-slides titulo-Marca">DESIGN DE MARCA E CRIATIVIDADE</h1>
+                    <p class="conteudo web-conteudo">Design de marca é um processo criativo e 
+                        estratégico de desenvolver uma identidade visual distintiva para uma 
+                        empresa, produto, serviço ou organização.</p>
+                    
+                        <div class="botton-comeca"><a href="WEb-html.html">Saiba mais</a> </div>
+            </div>
+            <!-- Adicione mais slides, se necessário -->
+          </div>
+
+          <img src="Composição 1.mp4">
+
+          <script> //Javascript
+            document.addEventListener("DOMContentLoaded", function() {
+    var slides = document.querySelectorAll(".slide");
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 5000); // Altere o tempo de transição aqui (em milissegundos)
+
+    function nextSlide() {
+    slides[currentSlide].className = "slide";
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = "slide active";
+  }
+});
+          </script>
+
+          <style> /*css*/
+            .slideshow {
+    width: 100%; /* Defina a largura desejada para o slideshow */
+    height: 300px; /* Defina a altura desejada para o slideshow */
+    overflow: hidden; /* Ocultar conteúdo além da altura especificada */
+    position: relative; /* Permitir posicionamento absoluto dos slides */
+  }
+  
+  .slide {
+    width: 100%; /* Defina a largura desejada para cada slide */
+    height: 100%; /* Defina a altura desejada para cada slide */
+    position: absolute; /* Posicionar slides absolutamente */
+    opacity: 0; /* Inicialmente, deixe todos os slides invisíveis */
+    transition: opacity 1s ease-in-out; /* Defina a transição de fade para os slides */
+  }
+  .slideshow .slide.active {
+    opacity: 1; /* Torna o slide atual visível */
+  }
+          </style>
+    </body>
+</html>
+ 

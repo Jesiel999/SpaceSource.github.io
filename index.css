@@ -1,0 +1,525 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+
+    
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Ocultar conteúdo além da altura especificada */
+}
+/*contato*/
+.contato-bloco{
+  z-index: 999;
+  position: fixed;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.contato-bloco img{
+  background-color: #01aa01;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 50px;
+  max-width: 30px;
+}
+/*topo*/
+header{
+  
+  background-image: linear-gradient(to left, #1e1e1e, #1e1e1e);
+  margin-top: 0px;
+  padding: 10px 0px;
+  font-family: "Katahdin Round";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo-space{
+  width: 200px;
+
+  margin: -45px 400px -45px 100px;
+}
+
+
+/*tag main*/
+main{
+  margin-top: 90px;
+                  
+  width: 100%; /* Defina a largura desejada para o slideshow */
+  height:750px; /* Defina a altura desejada para o slideshow */
+  
+  position: relative; /* Permitir posicionamento absoluto dos slides */
+  display: flex;
+  flex-direction: column;
+
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.topo-tags{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 14px;
+}
+.topo-tags a {
+  margin: 0px 25px;
+
+
+  color: #FFF;
+  text-decoration: none;
+}
+.topo-tags h3{
+  margin: -3px 0px;
+}
+.topo-tags a:hover{
+transform: scale(1.1);  
+color: #01aa01;
+}
+.botton{
+  background-color: #FFF;
+  background-size: 200% 100%;
+  background-position: 50% 50%;
+  transition: background-position 0.5s;
+
+
+  border-radius: 35px 35px;
+  transition: scaleUp 0.3s ease-in-out;
+}
+.orcamento h3{
+  margin: -20px 10px;
+  color: #1e1e1e;
+}
+
+.botton:hover{
+  transform: scale(1.2);
+  animation: scaleUp 0.3s ease-in-out;
+  margin-left: 30px;
+
+  background-color: #01aa01;
+  background-position: 100% 0%;
+}
+@keyframes scaleUp {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.95);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
+.orcamento h3:hover{
+  color: white;
+}
+
+/*slide*/
+    .slider {
+      position: relative;
+      width: 100%;
+    }
+    
+    .slider img {
+      width: 100%;
+      height: 888px;
+      display: none;
+    }
+    
+    .slider img.active {
+      display: block;
+    }
+    
+    .slider button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .slider .prev {
+      left: 10px;
+    }
+    
+    .slider .next {
+      right: 10px;
+    }
+
+
+    /*cards servicos*/
+    .bloco-cards{
+      border-top: #FFF solid 3px;
+      border-bottom: #01aa01 solid 2px;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      background-color: #1e1e1e;
+    }
+    .cards-all{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-titulo-servicos h1{
+      margin-top: 100px;
+      font-size: 70px;
+      font-family: "Katahdin Round";
+    }
+    .card-titulo-servicos h1, section a{
+      text-align: center;
+      text-decoration: none;
+      color:#FFF;
+    }
+    
+    .card-spacing{
+      margin: 70px 25px 190px 25px;
+    }
+    .card{
+      border: #FFF solid 2px;
+      border-radius: 20px;
+      width: 270px;
+      height: 430px;
+      padding: 10px;
+    }
+    .config-text{
+      position: relative;
+      top: -30px;
+    }
+    /*img servicos design*/
+    .imgs-servicos{
+      width:270px;
+    }
+    
+    .config-text h3{
+      font-weight:300;
+      font-size: 18px;
+      font-family: "Katahdin Round";
+    }
+    
+    /*quem somos*/
+    .sessao-apresentacao{
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    /*logo apresentacao*/
+    .logo-apresentacao{
+      width: 500px;
+      position: absolute;
+      z-index: -1;
+      right: 120px;
+      top: -150px;
+    }
+
+    .sessao-apresentacao h1{
+      font-size: 70px;
+      color: #01aa01;
+      font-family: "Katahdin Round";
+    }
+    .quemsomos h1{
+      border-left: #01aa01 solid 3px;
+      padding-left: 15px;
+    }
+    
+    .text-quem-somos{
+      font-size: 20px;
+      width: 72%;
+    }
+
+    .textonequemsomos{
+      font-weight: bolder;
+      border-bottom: #01aa01 solid 2px;
+      width: 45%;
+      padding-bottom: 10px;
+    }
+    .texttwoquemsomos{
+      font-size: 18px;
+      line-height: 33px;
+      margin-bottom: 150px;
+    }
+
+    /*valores*/
+    .valores{
+    text-align: right;
+    position: relative;
+    justify-content: right;
+    margin-bottom: 500px;
+    }
+    .titulo-valores{
+    border-right: #01aa01 solid 3px;
+    padding-right: 15px;
+    }
+    .textonevalores{
+    text-align: justify;
+    float:right;
+    font-size: 18px;
+    width: 50%;
+    }
+
+    
+    /*cards valores*/
+    .valorescards-text{
+      position: relative;
+    }
+    .cards-valores{
+      position: absolute;
+      height: 500px;
+      width: 750px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .cards-v{
+      color:#FFF;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to left, #1e1e1e, #003104);
+      height: 200px;
+      margin: 10px;
+      border: #003104 solid 2px;
+      width: 300px;
+      border-radius: 5px;
+      padding-bottom: 30px;
+    }
+    .cards-v h3{
+      font-family: "Katahdin Round";
+    }
+    .cards-v p{
+      position: relative;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    /*time*/
+    .time h1{
+      color:#013571;
+    }
+    .titulo-time{
+      border-left: #013571 solid 3px;
+      padding-left: 15px;
+    }
+    .textonetime{
+      font-size: 18px;
+    }
+
+
+  /*cards*/
+  .title-equipe-todos{
+    position: relative;
+    z-index: 3;
+
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(
+      160deg,
+      #080b9e 0%,
+      #0c1429 100%
+    );
+  -webkit-text-fill-color: transparent;
+    padding-top: 50px;
+  }
+
+  .container-equipe{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container-equipe::before{
+    content: "";
+    left: 0;
+    width: 100%;
+    min-height: 86vh;
+    opacity: 0.7;
+  }
+  .container-card-equipe{
+    position:relative;
+    bottom: 80px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /*linha da equipe*/
+  .row-equipe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  /*design da card*/
+  .card-equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+    background-color: #2ca8e2;
+    background-image: linear-gradient(
+      160deg,
+      #080b9e 0%,
+      #0c1429 100%
+    );
+    box-shadow:rgba(35, 36, 39, 0.9) 0px 50px 30px -20px;
+    
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+  }
+
+
+  /*img da equipe*/
+  .image-equipe{
+    display: inline-block;
+    width: 200px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .image-equipe::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgb(93, 130, 252);
+    background-image: linear-gradient(
+      160deg,
+      #2f50ac 0%,
+      #004997 100%
+    );
+    position: absolute;
+    z-index: -2;
+    top: -135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .card-equipe:hover .image-equipe::before{
+    height: 100%;
+  }
+
+  .image-equipe:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #013571;
+    background-image: linear-gradient(
+      160deg,
+      #013571 0%,
+      #00142b(0, 121, 26) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .details-equipe{
+    margin-top: 30px;
+  }
+
+  .image-equipe img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+
+  .card-equipe:hover .image-equipe img{
+    box-shadow: 0 0 0 14px #0c0f29;
+    transform: scale(0.7);
+  }
+
+  .name-equipe{
+    color: #fff;
+    font-family: "Katahdin Round";
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .daniel-prof{
+    margin: 25px;
+  }
+  .title-equipe{
+    width: 200px;
+    display: block;
+    font-size: 15px;
+    color: #95d0f8;
+  }
+
+  /*social*/
+  .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    background-image: linear-gradient(
+      160deg,
+      #2f50ac 0%,
+      #004997 100%
+    );
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.9s ease 0s;
+    box-shadow: #000000 0px 0px 30px 10px;
+  }
+
+  .card-equipe:hover .social{
+    bottom: -5px;
+  }
+
+  .social li{
+    display: inline-block;
+  }
+
+  .social li img{
+    height: 30px;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.9s ease 0s;
+    text-decoration: none;
+  }
+
+  .social li img:hover{
+    color: #f7f5ec;
+    background-color: #f7f5ec;
+  }
