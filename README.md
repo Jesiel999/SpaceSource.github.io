@@ -1,3 +1,3 @@
-# Site Space Souce
+<h1>Site Space Souce</h1>
 
-Neste projeto de website corporativo da Space Source eu utilizei meu conhecimento em JavaScript, HTML e CSS.
+<p>Nesse projeto foi feito um site de marketing digital através da linguagem de marcação HTML, a linguagem de estilização CSS e o JAVASCRIPT uma linguagem de programação.</p>
