@@ -16,6 +16,7 @@ body{
 }
 /*contato*/
 .contato-bloco{
+  z-index: 999;
   position: fixed;
   top: 150px;
   display: flex;
@@ -23,18 +24,17 @@ body{
   margin: 10px;
 }
 .contato-bloco img{
-  background-color: #ffd700;
+  background-color: #01aa01;
   border-radius: 10px;
   padding: 10px;
   max-height: 50px;
   max-width: 30px;
 }
-/*topo*/
+
 header{
-  background-image: linear-gradient(to left, #013571, #013571);
+  background-color: #013571;
   margin-top: 0px;
   padding: 10px 0px;
-  font-family: "Katahdin Round";
 
   position: fixed;
   top: 0;
@@ -44,20 +44,20 @@ header{
 }
 .logo-space{
   width: 200px;
+  margin: -45px auto -45px 0px;
 
-  margin: -45px 450px -45px 100px;
 }
+
 
 /*tag main*/
 main{
-  margin-top: 90px;
-                  
+
   width: 100%; /* Defina a largura desejada para o slideshow */
-  height:750px; /* Defina a altura desejada para o slideshow */
   
   position: relative; /* Permitir posicionamento absoluto dos slides */
   display: flex;
   flex-direction: column;
+
 }
 .logo{
   display: flex;
@@ -67,6 +67,8 @@ main{
   align-content: center;
 }
 .topo-tags{
+  margin-right:  100px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,6 +78,7 @@ main{
 }
 .topo-tags a {
   margin: 0px 25px;
+  font-family: "Katahdin Round";
 
 
   color: #FFF;
@@ -86,49 +89,8 @@ main{
 }
 .topo-tags a:hover{
 transform: scale(1.1);  
-color: #ffd700;
+color: #01aa01;
 }
-.botton{
-  background-color: #FFF;
-  background-size: 200% 100%;
-  background-position: 50% 50%;
-  transition: background-position 0.5s;
-
-
-  border-radius: 35px 35px;
-  transition: scaleUp 0.3s ease-in-out;
-}
-.orcamento h3{
-  margin: -20px 10px;
-  color: #013571;
-}
-
-.botton:hover{
-  transform: scale(1.2);
-  animation: scaleUp 0.3s ease-in-out;
-  margin-left: 30px;
-
-  background-color: #ffd700;
-  background-position: 100% 0%;
-}
-@keyframes scaleUp {
-  0% {
-   transform: scale(1);
-  }
- 
-  50% {
-   transform: scale(0.95);
-  }
- 
-  100% {
-   transform: scale(1);
-  }
- }
-.orcamento h3:hover{
-  color: white;
-}
-
-
 .titulo-planos{
   padding: 100px 300px 200px 300px;
   border-bottom: #013571 solid 2px;

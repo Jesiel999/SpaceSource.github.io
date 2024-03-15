@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+.background-carrinho{ 
+    margin: 100px 450px;
+    border-radius: 30px;
+    height: 800px;
+
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elipse{
+    z-index: 1;
+    position: absolute;
+    top: 95px;
+    width: 170px; /* Largura da elipse */
+    height: 170px; /* Altura da elipse */
+    background-color: #01aa01; /* Cor de fundo da elipse */
+    border-radius: 50%; 
+}
+.logo{
+    z-index: 2;
+    height: 150px;
+    margin-top: -600px;
+}
+
+.linha-atravessando {
+    position: relative;
+  }
+  
+  .linha-atravessando::after {
+    content: "";
+    margin: 0px 480px;
+    position: absolute;
+    top: -800px; /* Ajuste para a posição vertical desejada */
+    left: 0;
+    right: 0;
+    height: 1px; /* Espessura da linha */
+    background-color: #01aa01; /* Cor da linha */
+  }
+
+  h1{
+    color: #01aa01;
+}

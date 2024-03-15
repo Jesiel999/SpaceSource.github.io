@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilos para a aba */
+        .tab {
+            width: 0;
+            height: 100%;
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            transition: width 0.5s;
+        }
+
+        /* Estilos para o conteúdo da aba */
+        .tab-content {
+            padding: 20px;
+        }
+
+        /* Estilos para o botão que abre a aba */
+        .open-button {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        /* Estilos para o botão quando a aba está aberta */
+        .open-button.active {
+            background-color: #333;
+        }
+
+        /* Estilos para a aba quando está aberta */
+        .tab.active {
+            width: 500px;
+        }
+
+        /* Estilos para o botão de fechar a aba */
+        .close-button {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<button class="open-button" id="openTab">Abrir Aba</button>
+
+<div class="tab" id="myTab">
+    <span class="close-button" id="closeTab">X</span>
+    <div class="tab-content">
+        <!-- Conteúdo da aba -->
+        <h2>Minha Aba Deslizante</h2>
+        <p>Aqui está o conteúdo da aba deslizante.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("openTab").addEventListener("click", function() {
+        var tab = document.getElementById("myTab");
+        var button = document.getElementById("openTab");
+
+        // Alternar a classe "active" na aba e no botão
+        tab.classList.toggle("active");
+        button.classList.toggle("active");
+    });
+
+    document.getElementById("closeTab").addEventListener("click", function() {
+        var tab = document.getElementById("myTab");
+        var button = document.getElementById("openTab");
+
+        // Fechar a aba
+        tab.classList.remove("active");
+        button.classList.remove("active");
+    });
+</script>
+
+</body>
+</html>

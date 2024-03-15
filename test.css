@@ -1,0 +1,30 @@
+/* Estilo para o botão de menu */
+#menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para o ícone de três pontos (você precisa incluir o Font Awesome) */
+#menu-button i {
+    font-size: 24px;
+    color: #a00000;
+}
+
+/* Estilo para a caixa do carrinho de compras, inicialmente oculta */
+.cart {
+    display: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar a caixa do carrinho quando o botão é clicado */
+#menu-button:focus + .cart {
+    display: block;
+}
